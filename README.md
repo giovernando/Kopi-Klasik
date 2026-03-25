@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+# Kopi Klasik
 
-## Project info
+Kopi Klasik adalah aplikasi web berbasis PWA (Progressive Web App) untuk e-commerce makanan & minuman. Aplikasi ini dibangun menggunakan React, TypeScript, dan Tailwind CSS dengan fokus pada performa, UI modern, dan pengalaman pengguna yang optimal.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## Tech Stack
 
-There are several ways of editing your application.
+* React 18
+* TypeScript
+* Vite
+* Tailwind CSS
+* shadcn/ui + Radix UI
+* TanStack React Query
+* Zustand
+* Framer Motion
+* Supabase
+* Vite PWA Plugin
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Fitur Utama
 
-Changes made via Lovable will be committed automatically to this repo.
+### Authentication
 
-**Use your preferred IDE**
+* Login & Register
+* Integrasi Supabase Auth
+* Manajemen state menggunakan Zustand
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### E-Commerce
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* List produk
+* Detail produk
+* Keranjang (Cart)
+* Checkout
 
-Follow these steps:
+### Cart System
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* Tambah / hapus produk
+* Update quantity
+* State global
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Favorites
 
-# Step 3: Install the necessary dependencies.
-npm i
+* Menyimpan produk favorit
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### Address Management
 
-**Edit a file directly in GitHub**
+* Menyimpan alamat user
+* Digunakan saat checkout
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### PWA Features
 
-**Use GitHub Codespaces**
+* Install ke device
+* Offline support (basic)
+* Mobile-friendly
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### UI/UX
 
-## What technologies are used for this project?
+* Responsive design
+* Komponen modern (Radix UI)
+* Animasi dengan Framer Motion
+* Toast notification
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Struktur Folder
 
-## How can I deploy this project?
+src/
+├── assets/
+├── components/
+├── data/
+├── hooks/
+├── pages/
+├── stores/
+├── types/
+├── utils/
+├── lib/
+└── integrations/
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## Instalasi & Menjalankan Project
 
-Yes, you can!
+1. Clone repository
+   git clone <repo-url>
+   cd kopi-klasik
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+2. Install dependencies
+   npm install
+   atau
+   bun install
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+3. Jalankan project
+   npm run dev
+
+---
+
+## Build Production
+
+npm run build
+
+Preview:
+npm run preview
