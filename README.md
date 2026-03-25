@@ -64,22 +64,6 @@ Kopi Klasik adalah aplikasi web berbasis PWA (Progressive Web App) untuk e-comme
 
 ---
 
-## Struktur Folder
-
-src/
-├── assets/
-├── components/
-├── data/
-├── hooks/
-├── pages/
-├── stores/
-├── types/
-├── utils/
-├── lib/
-└── integrations/
-
----
-
 ## Instalasi & Menjalankan Project
 
 1. Clone repository
