@@ -79,10 +79,3 @@ Kopi Klasik adalah aplikasi web berbasis PWA (Progressive Web App) untuk e-comme
    npm run dev
 
 ---
-
-## Build Production
-
-npm run build
-
-Preview:
-npm run preview
