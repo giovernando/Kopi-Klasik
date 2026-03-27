@@ -66,9 +66,8 @@ Kopi Klasik adalah aplikasi web berbasis PWA (Progressive Web App) untuk e-comme
 
 ## Instalasi & Menjalankan Project
 
-1. Clone repository
-   git clone <"https://github.com/giovernando/Kopi-Klasik.git">
-   cd Kopi-Klasik
+1. Clone repository <repo-url>
+   cd kopi-klasik
 
 2. Install dependencies
    npm install
