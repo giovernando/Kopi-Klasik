@@ -107,11 +107,11 @@ const App = () => (
                   <Route path="/register" element={<RegisterPage />} />
                   <Route path="/forgot-password" element={<ForgotPasswordPage />} />
                   <Route path="/reset-password" element={<ResetPasswordPage />} />
-                  <Route path="/home" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
-                  <Route path="/menu" element={<ProtectedRoute><MenuPage /></ProtectedRoute>} />
-                  <Route path="/search" element={<ProtectedRoute><SearchPage /></ProtectedRoute>} />
-                  <Route path="/product/:id" element={<ProtectedRoute><ProductDetailPage /></ProtectedRoute>} />
-                  <Route path="/cart" element={<ProtectedRoute><CartPage /></ProtectedRoute>} />
+                  <Route path="/home" element={<HomePage />} />
+                  <Route path="/menu" element={<MenuPage />} />
+                  <Route path="/search" element={<SearchPage />} />
+                  <Route path="/product/:id" element={<ProductDetailPage />} />
+                  <Route path="/cart" element={<CartPage />} />
                   <Route path="/checkout" element={<ProtectedRoute><CheckoutPage /></ProtectedRoute>} />
                   <Route path="/order-success" element={<ProtectedRoute><OrderSuccessPage /></ProtectedRoute>} />
                   <Route path="/orders" element={<ProtectedRoute><OrdersPage /></ProtectedRoute>} />
@@ -126,11 +126,11 @@ const App = () => (
                   <Route path="/notifications" element={<ProtectedRoute><NotificationsPage /></ProtectedRoute>} />
                   <Route path="/manage-address" element={<ProtectedRoute><ManageAddressPage /></ProtectedRoute>} />
                   <Route path="/payment-methods" element={<ProtectedRoute><PaymentMethodsPage /></ProtectedRoute>} />
-              <Route path="/offers" element={<ProtectedRoute><OffersPage /></ProtectedRoute>} />
-                  <Route path="/about" element={<ProtectedRoute><AboutPage /></ProtectedRoute>} />
-                  <Route path="/contact" element={<ProtectedRoute><ContactPage /></ProtectedRoute>} />
-                  <Route path="/faq" element={<ProtectedRoute><FAQPage /></ProtectedRoute>} />
-                  <Route path="/terms" element={<ProtectedRoute><TermsPage /></ProtectedRoute>} />
+                  <Route path="/offers" element={<OffersPage />} />
+                  <Route path="/about" element={<AboutPage />} />
+                  <Route path="/contact" element={<ContactPage />} />
+                  <Route path="/faq" element={<FAQPage />} />
+                  <Route path="/terms" element={<TermsPage />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
                 <FloatingBottomNav />
