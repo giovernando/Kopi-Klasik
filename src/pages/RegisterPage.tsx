@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Mail, Lock, User, Eye, EyeOff, Loader2 } from 'lucide-react';
+import { AssistedPasswordConfirmation } from '@/components/ui/assisted-password-confirmation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useAuthStore } from '@/stores/authStore';
@@ -32,7 +33,7 @@ export default function RegisterPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name || !email || !password || !confirmPassword) { toast({ title: t('toast.fillAllFields'), variant: 'destructive' }); return; }
-    if (password !== confirmPassword) { toast({ title: t('toast.passwordMismatch'), variant: 'destructive' }); return; }
+    // Password match handled by AssistedPasswordConfirmation visual feedback
     if (password.length < 6) { toast({ title: t('toast.passwordShort'), description: 'Min 6 characters', variant: 'destructive' }); return; }
 
     const result = await register(name, email, password);
@@ -98,10 +99,7 @@ export default function RegisterPage() {
 
             <div className="space-y-2">
               <label className="text-sm font-medium" style={{ color: '#2B1F16' }}>{t('register.confirmPassword')}</label>
-              <div className="relative">
-                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5" style={{ color: '#9C8B80' }} />
-                <Input type={showPassword ? 'text' : 'password'} placeholder={t('register.confirmPlaceholder')} value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className="pl-12 h-12 rounded-xl border-2" style={{ borderColor: '#E8DED6', backgroundColor: '#FDFBF9' }} />
-              </div>
+              <AssistedPasswordConfirmation password={password} />
             </div>
 
             <Button type="submit" disabled={isLoading} className="w-full h-12 rounded-full text-base font-semibold mt-2" style={{ backgroundColor: '#B87333', color: 'white', boxShadow: '0 8px 24px -8px rgba(184, 115, 51, 0.5)' }}>
