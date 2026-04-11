@@ -8,4 +8,4 @@
 5. Test: Run dev server, splash → /home OK, menu/cart OK, /checkout → /login
 6. [COMPLETE] attempt_completion
 
-**Current: Step 5**
+**Task Complete ✅**
